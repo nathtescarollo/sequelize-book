@@ -28,6 +28,11 @@ module.exports = (sequelize, DataTypes) => {
       User.hasMany(models.Address, {
         foreignKey: 'user_id',
         as: 'addresses'
+        // exemplo de como o sequelize entenderia como deve ser o singular e o plural de um alias em pt-br:
+        // as: {
+        //   singular: 'endereco',
+        //   plural: 'enderecos'
+        // }
       });
     };
 

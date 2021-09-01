@@ -1,5 +1,5 @@
-module.exports = (DataTypes, DataTypes) => {
-    const Address = DataTypes.define('Address', { 
+module.exports = (sequelize, DataTypes) => {
+    const Address = sequelize.define('Address', { 
         street: { 
           type: DataTypes.STRING,
           allowNull: false,
